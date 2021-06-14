@@ -14,8 +14,12 @@
     box-sizing: border-box;
 }
 body {
-    height: 10000px;
+    height: 2000px;
     background-color: #fff;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 a:link { color: #555; }
 a:visited { color: #555; }
@@ -31,21 +35,7 @@ ul { list-style: none; }
     display: flex;
 }
 
-#BG_image {
-    width: 100%;
-    height: 100%;
-
-    background-image: url("../images/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: -1;
-}
-
 #wrap {
-    border: 1px solid #000;
     width: 1060px;
     margin: 0 auto;
     background-color: #fff;
@@ -71,7 +61,7 @@ ul { list-style: none; }
     display: flex;
 }
 #main {
-    border: 1px solid #000;
+
 }
 #shopImg {
     padding: 20px;
@@ -90,8 +80,80 @@ ul { list-style: none; }
     line-height: 30px;
 }
 #contents {
-    border: 1px solid #000;
+    justify-content: center;
+}
+#contents > div {
+    width: 250px;
+    height: 210px;
+    margin: 5px;
+}
+#contents > div:not(:first-child) {
+    border: 1px dotted #000;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#contents>div:first-child {
+    padding: 20px 0;
+}
+#contents>div:first-child>h3 {
+    padding: 10px;
+    background-color: #e76c6e;
+    color: #fff;
+}
+#contents>div:first-child>ul {
+    list-style: square;
+    list-style-position: inside;
+    padding: 20px 0 0 20px;
+    line-height: 30px;
+}
+#contents>div:first-child span {
+    font-weight: bold;
+}
+#contents>div:nth-child(2) {
+    background-image: url(../images/bg1.png);
+}
+#contents>div:nth-child(3) {
+    background-image: url(../images/bg2.png);
+}
+#contents>div:nth-child(4) {
+    background-image: url(../images/bg3.png);
+}
+#contents .flowerTitle {
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: right;
+
+    position: relative;
+    top: 120px;
+}
+#contents .flowerTitle h2 {
+    color: rgb(185, 32, 66);
+}
+#contents .flowerTitle h4 {
+    position: relative;
+    top: 30px;
+    color: #3783ff;
 }
 #footer {
-    border: 1px solid #000;
+    border-top: 1px solid #e5e5e5;
+    position: relative;
+}
+#footerGNB {
+    padding-left: 40px;
+}
+#footer li {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 12px;
+    font-size: 14px;
+}
+#footer li:hover {
+    text-decoration: underline;
+}
+#copyright {
+    position: absolute;
+    right: 13px;
+    font-size: 14px;
+    top: 17px;
 }
