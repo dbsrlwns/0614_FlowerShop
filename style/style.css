@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+/* Reset */
+
+* {
+    color: #222;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    height: 10000px;
+    background-color: #fff;
+}
+a:link { color: #555; }
+a:visited { color: #555; }
+a:hover { color: #555; }
+a:active { color: #555; }
+img { vertical-align: middle; }
+ul { list-style: none; }
+.flexContainer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+#BG_image {
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+#wrap {
+    border: 1px solid #000;
+    width: 1060px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+#header {
+    width: 1060px;
+    height: 195px;
+}
+#gnb {
+    background-color: #c51a3e;
+    padding-left: 40px;
+}
+#gnb a {
+    display: inline-block;
+    padding: 14px 10px;
+    color: #fff;
+    font-size: 16px;
+}
+#gnb a:hover {
+    background-color: rgba(255, 49, 49, 0.7);
+}
+#mainMenu {
+    display: flex;
+}
+#main {
+    border: 1px solid #000;
+}
+#shopImg {
+    padding: 20px;
+}
+#greetingMsg {
+    padding: 50px 20px;
+}
+#greetingMsg h2 {
+    padding-left: 20px;
+    margin-bottom: 26px;
+}
+#greetingMsg p {
+    color: #d17145;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+}
+#contents {
+    border: 1px solid #000;
+}
+#footer {
+    border: 1px solid #000;
+}
